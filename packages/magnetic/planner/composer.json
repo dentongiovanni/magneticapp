@@ -1,0 +1,30 @@
+{
+    "name": "magnetic/planner",
+    "description": "Lists companies and number of employees and export the list in CSV file.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Denton Payo",
+            "email": "dpayo@example.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Magnetic\\Planner\\Providers\\PlannerServiceProvider",
+                "Magnetic\\Planner\\Providers\\PlannerEventServiceProvider"
+            ]
+        }
+    },
+     "autoload": {
+        "psr-4": {
+            "Magnetic\\Planner\\": "src/",
+            "Magnetic\\Planner\\Models\\": "src/Models/",
+            "Magnetic\\Planner\\Providers\\": "src/Prodivers/",
+            "Magnetic\\Planner\\Events\\": "src/Events/",
+            "Magnetic\\Planner\\Listeners\\": "src/Listeners/"
+         }
+    }
+}
